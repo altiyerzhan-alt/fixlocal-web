@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center bg-black text-white">
@@ -26,16 +27,12 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
+  <Button>Получить расчет</Button>
 
-            <button className="rounded-xl bg-red-600 px-8 py-4 font-semibold transition hover:bg-red-500">
-              Получить расчет
-            </button>
-
-            <button className="rounded-xl border border-white/20 px-8 py-4 transition hover:border-red-500">
-              Истории восстановления
-            </button>
-
-          </div>
+  <Button variant="secondary">
+    Истории восстановления
+  </Button>
+</div>
 
         </div>
 
