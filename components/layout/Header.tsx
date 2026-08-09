@@ -1,31 +1,53 @@
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/70 backdrop-blur-md">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
+    <header className="fixed left-0 right-0 top-0 z-[9999] bg-black/75 backdrop-blur-xl">
+      <div className="mx-auto flex h-28 w-full max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-10">
 
-        <div className="text-2xl font-bold tracking-[0.25em] text-white">
-          FIXLOCAL
-        </div>
+        {/* Logo */}
+        <a
+          href="#"
+          className="group flex items-center gap-3"
+        >
+          <span className="h-9 w-1.5 rounded-full bg-red-600 transition-all duration-300 group-hover:h-11" />
 
+          <span className="font-bebas text-[32px] tracking-[0.08em] text-white">
+            FIXLOCAL
+          </span>
+        </a>
+
+        {/* Navigation */}
         <nav className="hidden items-center gap-10 lg:flex">
-          <a href="#" className="text-sm uppercase tracking-wider text-white/70 transition hover:text-red-500">
+          <a
+            href="#services"
+            className="font-montserrat text-[16px] font-semibold text-white/90 transition duration-300 hover:text-red-500"
+          >
             Услуги
           </a>
 
-          <a href="#" className="text-sm uppercase tracking-wider text-white/70 transition hover:text-red-500">
+          <a
+            href="#cases"
+            className="font-montserrat text-[16px] font-semibold text-white/90 transition duration-300 hover:text-red-500"
+          >
             Кейсы
           </a>
 
-          <a href="#" className="text-sm uppercase tracking-wider text-white/70 transition hover:text-red-500">
+          <a
+            href="#standards"
+            className="font-montserrat text-[16px] font-semibold text-white/90 transition duration-300 hover:text-red-500"
+          >
             Стандарты
           </a>
 
-          <a href="#" className="text-sm uppercase tracking-wider text-white/70 transition hover:text-red-500">
+          <a
+            href="#contacts"
+            className="font-montserrat text-[16px] font-semibold text-white/90 transition duration-300 hover:text-red-500"
+          >
             Контакты
           </a>
         </nav>
 
-        <button className="rounded-xl bg-red-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-500">
+        {/* CTA */}
+        <button className="font-montserrat rounded-xl bg-red-600 px-7 py-4 text-[15px] font-bold text-white shadow-lg shadow-red-600/20 transition duration-300 hover:scale-105 hover:bg-red-500">
           Получить расчет
         </button>
 
