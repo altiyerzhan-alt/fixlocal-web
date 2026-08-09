@@ -1,7 +1,9 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
 import WhyFixLocal from "@/components/sections/WhyFixLocal";
-import Services from "@/components/sections/Services";
+import Cases from "@/components/sections/Cases";
+import Process from "@/components/sections/Process";
+import Value from "@/components/sections/Value";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
       <Header />
       <Hero />
       <WhyFixLocal />
-      <Services />
+      <Cases />
+      <Process />
+      <Value />
     </main>
   );
 }
